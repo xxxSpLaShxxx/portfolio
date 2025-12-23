@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Моё портфолио</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -10,21 +11,29 @@
       color: #e5e7eb;
       padding: 40px;
     }
+
     h1 {
       color: #38bdf8;
     }
+
     .card {
       background: #020617;
       padding: 20px;
       border-radius: 10px;
       margin-top: 20px;
     }
+
+    /* Общий стиль для всех видео */
+    .video {
+      margin-top: 15px;
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Привет, я Артур </h1>
-  <p>я професиональный монтажер</p>
+  <h1>Привет, я Артур</h1>
+  <p>Я профессиональный монтажёр</p>
 
   <div class="card">
     <h2>Проекты</h2>
@@ -36,32 +45,42 @@
   </div>
 
   <div class="card">
-  <h2>Мои видео</h2>
+    <h2>Мои видео</h2>
 
-  <iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/gDEttKWtHBo"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+    <!-- ===== ВИДЕО 1 ===== -->
+    <video
+      class="video"
+      controls        <!-- controls — показывает кнопки play / pause / громкость -->
+      width="600"     <!-- width — ширина видео в пикселях -->
+      style="scale: 1;" <!-- scale — масштаб (1 = 100%, 1.2 = 120%) -->
+    >
+      <source src="ТУТ_ВСТАВЬ_ПУТЬ_К_ВИДЕО_1.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
 
+    <!-- ===== ВИДЕО 2 ===== -->
+    <video
+      class="video"
+      controls
+      width="600"
+      style="scale: 1;"
+    >
+      <source src="ТУТ_ВСТАВЬ_ПУТЬ_К_ВИДЕО_2.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
 
+    <!-- ===== ВИДЕО 3 ===== -->
+    <video
+      class="video"
+      controls
+      width="600"
+      style="scale: 1;"
+    >
+      <source src="ТУТ_ВСТАВЬ_ПУТЬ_К_ВИДЕО_3.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
 
-
-  <video controls width="600" style="margin-top: 15px;">
-    <source src="video2.mp4" type="video/mp4">
-    Ваш браузер не поддерживает видео.
-  </video>
-  
-  <video controls width="600" style="margin-top: 15px;">
-    <source src="videos/video3.mp4" type="video/mp4">
-    Ваш браузер не поддерживает видео.
-  </video>
-
-</div>
+  </div>
 
   <div class="card">
     <h2>Контакты</h2>
@@ -71,9 +90,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
